@@ -1,0 +1,47 @@
+.section{
+	position: relative;
+	background: #FFFFFF;
+	overflow: hidden;
+	text-align: center;
+}
+.section1{
+	background: url(../img/hero_sunset_large_2x.jpg) no-repeat center;
+	background-size: cover;
+}
+.section1 h1{
+	margin-top: 5%;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 70px;
+	opacity: 0.8;
+}
+.section2 .container{
+	width: 450px;
+	height: 800px;
+	margin: 0 auto;
+}
+.section2 .container .slide1{
+	background: url(../img/primary_large_2x.jpg);
+	background-size: cover;
+}
+.section2 .container .slide2{
+	background: url(../img/primary_large_2x.jpg);
+	background-size: cover;
+}
+.section2 .container .slide3{
+	background: url(../img/primary_large_2x.jpg);
+	background-size: cover;
+}
+.section2 .container .slide4{
+	background: url(../img/primary_large_2x.jpg);
+	background-size: cover;
+}
+
+.section3{
+	background: url(../img/technology_hero_large_2x.jpg) no-repeat center;
+	background-size: cover;
+}
+.section4{
+	background: url(../img/hero_sunset_large_2x.jpg) no-repeat center;
+	background-size: cover;
+}
