@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>My Todo App</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css" />
+</head>
+<body>
+	
+		<div class="msg">
+    <span class="msg-content"></span>
+    <span class="anchor confirmed">知道了</span>
+</div>
+		<!-- 总容器开始 -->
+	<div class="container"><!-- 总容器开始 -->
+    <h1>我的Todo</h1>
+    <form class="add-task">
+        <input name="content" type="text" placeholder="在这里输入新的事件" autofocus="" autocomplete="off">
+        <button type="submit">submit</button>
+    </form>
+    <div class="task-list"><div class="task-item" data-index="3"><span><input class="complete" type="checkbox"></span><span class="task-content">111</span><span class="fr"><span class="action delete"> 删除</span><span class="action detail"> 详细</span></span></div><div class="task-item" data-index="1"><span><input class="complete" type="checkbox"></span><span class="task-content">333</span><span class="fr"><span class="action delete"> 删除</span><span class="action detail"> 详细</span></span></div></div><!--清单列表结束-->
+    <div class="task-detail-mask"></div>
+    <div class="task-detail"><!-- 任务详情开始 -->
+    </div><!-- 任务详情结束 -->
+</div>
+	<video class="alerter" src="alert.mp3"></video>
+	<!-- 总容器结束 -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/store.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/base.js" ></script>
+<script src="js/jquery.datetimepicker.full.js"></script>
+</body>
+</html>
