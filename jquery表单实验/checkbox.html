@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/checkbox.css" />
+	</head>
+	<body>
+		<form>
+			你爱好的运动时？<br />
+			<input type="checkbox" name="items" value="足球"/>足球
+			<input type="checkbox" name="items" value="篮球"/>篮球
+			<input type="checkbox" name="items" value="羽毛球"/>羽毛球
+			<input type="checkbox" name="items" value="乒乓球"/>乒乓球<br />
+			<input type="button" id="CheckedAll" value="全 选"/>
+			<input type="button" id="CheckedNo" value="全不选"/>
+			<input type="button" id="CheckedRev" value="反 选"/>
+			<input type="button" id="send" value="提 交"/>
+		</form>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script>
+		$("#CheckedAll").click(function(){
+			$('[name=items]:checkbox').attr('checked',true);
+		});
+		$("#CheckedNo").click(function(){
+			$('[name=items]:checkbox').attr('checked',false);
+		});
+		$("#CheckedRev").click(function(){
+			$('[name=items]:checkbox').each(function(){
+				this.checked=!this.checked;
+			});
+		});
+		$('#send').click(function(){
+			var str="你选中的是：\r\n";
+			$('[name=items]:checkbox:checked').each(function(){
+				str += $(this).val()+"\r\n";
+			});
+			alert(str);
+		});
+		
+	</script>
+</html>

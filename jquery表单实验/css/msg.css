@@ -1,0 +1,9 @@
+.bigger,.smaller{
+	display: inline-block;
+	border: 1px solid #000;
+	height: 25px;
+	text-align: center;
+	width: 50px;
+	background-color: #ccc;
+	cursor: pointer;
+}

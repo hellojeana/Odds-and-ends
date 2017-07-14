@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>msg</title>
+		<link rel="stylesheet" href="css/msg.css" />
+	</head>
+	<body>
+		<form>
+			<div class="msg">
+				<div class="msg_caption">
+					<span class="bigger">放大</span>
+					<span class="smaller">缩小</span>
+				</div>
+				<div>
+					<textarea id="comment" rows="8" cols="20">
+						点击放大后，评论框高度小于500则增加50；点击缩小后，若评论框高于50则减去50
+					</textarea>
+				</div>
+			</div>
+		</form>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script>
+		$(function(){
+			var $comment = $('#comment');
+			$('.bigger').click(function(){
+				if($comment.height()<500){
+					$comment.animate({height:"+=50"},300);
+				}
+			});
+			$('.smaller').click(function(){
+				if($comment.height()>50){
+					$comment.animate({height:"-=50"},300);
+				}
+			})
+		})
+	</script>
+</html>
